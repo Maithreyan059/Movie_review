@@ -1,0 +1,164 @@
+body{
+    box-sizing: border-box;
+    background: linear-gradient(rgb(18, 18, 18),rgb(94, 94, 94));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Title{
+    position:absolute;
+    left: 170px;
+    color: white;
+    z-index: 99;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+header{
+    position: relative;
+    padding: 20px 80px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    background-color:rgb(56, 56, 56);
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+
+header img{
+    border-radius: 10%;
+}
+
+header a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 5.5px;
+    transition:background-color 0.5s;
+    transition-timing-function: ease;
+}
+header a.active{
+    background-color:rgb(24, 24, 24);
+    border-radius: 5.5px;
+}
+
+header a:hover{
+   background-color:rgb(24, 24, 24);
+}
+
+#logo{
+    position: relative;
+    padding: 20px 15px ;
+    border-radius: 6%;
+}
+
+#about{
+    display: flex;
+}
+
+.sec2{
+    flex-direction: column;
+    color: white;
+    font-family: sans-serif;
+}
+
+.sec2 p{
+    color: white;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: justify;
+}
+
+#logos {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#logos img{
+    padding-right: 40px;
+}
+
+#indicator{
+    color: white;
+    font-family: sans-serif;
+    padding-left: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+#arrow{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.frm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 450px;
+    width: 445px;
+    border: 2px solid rgb(255, 255, 255, 0.5);
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.email input, .pass input{
+    background: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.5s;
+    color: black;
+}
+.email input:hover, .pass input:hover{
+    border:2px solid rgb(44, 44, 52);
+    z-index: 99;
+}
+
+.hel, .acc, .hel a, .acc a{
+    padding: 20px 0px 0px 0px ;
+    color: white;
+    font-weight: 500;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: rgb(255, 255, 255, 0);
+    transition: all 0.5s;
+    text-underline-offset: 4px;
+    position: relative;
+}
+
+.email span, .pass span{
+    position: absolute;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+    padding-left: 10px;
+}
+
+.hel:hover,.acc:hover{
+   text-decoration-color: rgb(27, 27, 50);
+}
+
+.frm h3{
+    font-size: 30px;
+    color: white;
+}
+
+.email, .acc{
+    padding: 20px 0px;
+}
