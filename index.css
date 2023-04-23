@@ -51,6 +51,8 @@ header a:hover{
 }
 
 #logo{
+    height: 400px;
+    width: 500px;
     position: relative;
     padding: 20px 15px ;
     border-radius: 6%;
@@ -58,6 +60,7 @@ header a:hover{
 
 #about{
     display: flex;
+    padding-bottom: 20px;
 }
 
 .sec2{
@@ -68,9 +71,9 @@ header a:hover{
 
 .sec2 p{
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     text-align: justify;
 }
 
@@ -83,19 +86,17 @@ header a:hover{
     padding-right: 40px;
 }
 
-#indicator{
+.indicator{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
     color: white;
     font-family: sans-serif;
     padding-left: 20px;
-    font-size: 20px;
-    text-align: center;
+    font-size: 15px;
     font-weight: 400;
-}
-
-#arrow{
-    position: relative;
-    display: flex;
-    justify-content: center;
 }
 
 .frm{
@@ -116,18 +117,20 @@ header a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .email input, .pass input{
+    font-family: sans-serif;
     background: white;
     border: 2px solid white;
     border-radius: 10px;
     transition: all 0.5s;
     color: black;
+    font-weight: 500;
 }
 .email input:hover, .pass input:hover{
-    border:2px solid rgb(44, 44, 52);
+    border:2px solid rgb(100, 100, 102);
     z-index: 99;
 }
 
@@ -142,6 +145,10 @@ header a:hover{
     position: relative;
 }
 
+.hel a{
+    padding-left: 12px;
+}
+
 .email span, .pass span{
     position: absolute;
     font-weight: 500;
@@ -150,15 +157,47 @@ header a:hover{
     padding-left: 10px;
 }
 
-.hel:hover,.acc:hover{
+.hel a:hover,.acc a:hover{
    text-decoration-color: rgb(27, 27, 50);
 }
 
 .frm h3{
     font-size: 30px;
     color: white;
+    margin-bottom: 15px;
 }
 
 .email, .acc{
     padding: 20px 0px;
+}
+
+.sub{
+    font-weight: 400;
+    margin-left: 2px;
+    margin-right: 2px;
+    background:transparent;
+    color: white;
+    border: 2px solid rgb(121, 121, 121, 0.5);
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.sub:hover{
+    background-color: rgb(96, 143, 230);
+    border: 2px solid rgb(70, 70, 216);
+}
+
+@keyframes slideup {
+    100%{transform: translatey(-90px);}
+}
+
+.wrap, .indicator{
+    animation-name: slideup;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+html{
+    scroll-behavior: smooth;
 }

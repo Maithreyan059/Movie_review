@@ -20,7 +20,7 @@
             <a href="#">About</a>
         </nav>
     </header>
-    <div id="about">
+    <div class="fadein" id="about">
     <img id="logo" src="logo.png" alt="site_logo">
         <div class="sec2">
         <h1>
@@ -41,9 +41,11 @@
             </div>
         </div>
     </div>
-    <p id="indicator">Scroll Down To Sign UP</p>
-    <div>
-    <div class="wrap">
+    <div class="fadein" class="indicator">
+    <p>Scroll Down To Sign UP</p>
+    <img src="white-arrow-png-41944.png" height="20px" width="20px" alt="scroll Down">
+    </div>
+    <div class="wrap" class="fadeout">
     <form class="frm" action="#">
         <h3>
             Login
@@ -55,10 +57,18 @@
         <input type="password"><span>password</span>
         </div>
         <div class="hel">
-        <input type="checkbox">Remember Me <a   href="#">Forgot password</a>
+        <input type="checkbox">Remember Me  <a  href="#">Forgot password</a>
         </div>
         <div class="acc">
             <a  href="#"> Dont have an account?</a>
+        </div>
+        <div class="buttons">
+            <button class="sub" type="submit">
+                submit
+            </button>
+            <button class="sub" type="reset">
+                reset
+            </button>
         </div>
     </div>
     </form>
